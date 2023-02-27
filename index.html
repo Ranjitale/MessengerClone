@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger clone -ClassMate</title>
+    <script src="https://kit.fontawesome.com/15e8fc7f6b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Martian+Mono&family=Poppins:wght@400;700&family=Sofia&family=Varela+Round&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+    <script defer src="script.js"></script>
+    <style
+    >
+*{
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+}
+h1{
+font-family: 'Poppins', sans-serif;}
+.container{
+    display:flex;
+}
+.nav-bar{
+    width: 1vw;
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+    border-right: 2px solid rgb(206, 181, 181);
+}
+a{
+    color: black;
+}
+.profile{
+        width: 1vw;
+        position: fixed;
+            display: grid;
+            padding: 20px;
+            gap: 20px;
+            border-right: 2px solid rgb(206, 181, 181);
+}
+.profile_1{
+        width: 1vw;
+        position: fixed;
+            display: grid;
+            padding: 20px;
+            gap: 20px;
+            border-right: 2px solid rgb(206, 181, 181);
+}
+.container-left{
+    justify-content: space-around;
+    position: fixed;
+}
+.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 95% 95%;
+    margin-top: 70vh;
+}
+input{
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    outline: none;background-color: rgb(230, 238, 238);
+    font-size: 20px;
+    border-radius: 2px;
+    left: 1vw;
+ 
+    
+}
+.friends{
+ position: relative;
+ width: 31vw; 
+ left: 9vw  
+}
+
+.info{ 
+    left: 1vw;
+    display: flex;
+    justify-content: space-between;
+}i{
+    cursor: pointer;
+}
+.info i{
+    
+    top: 1vw;
+    background-color: rgb(223, 232, 239);
+    border-radius: 50%;
+} .info i:hover{
+    background-color: rgb(188, 191, 194);
+}
+.f-icon i{
+   padding: 10px;
+}
+.search{
+    position: absolute;
+    left: 1vw;
+    padding: 5px;
+    
+    background-color: rgb(230, 238, 238);
+    border-radius: 20px;
+    width: 19vw;
+    height: 029px;
+   text-align: center;
+   align-items: center;
+
+}
+button{
+    border:none;
+    outline: none;
+}
+.chats{
+    overflow-y: auto;
+   position: inherit;
+    margin-top: 8vh;
+    
+}
+.chat{
+    display: flex;
+    padding: 08px;
+    gap: 10px;
+}
+
+.profile-1{
+    width: 80px;
+    height: 80px;
+    border-radius: 050%;
+}
+.detail{
+    font-weight: 700;
+    position: relative;
+    top: 2.0vw;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+.detail p{
+    font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
+}
+@media only screen and (max-width: 700px) {
+.friends {
+        position: relative;
+        width: 100vw;
+}
+.search{
+    width: 100vw;
+}
+.nav-bar{
+    display: none;
+}
+.profile{
+    display: none;
+}
+}</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-left">
+            <div class="nav-bar">
+               <a href="#"><i class="fa-solid fa-comment"
+                            style="font-size:20px; "></i></a>
+                <a href="#"><i class="fa-solid fa-user-group"
+                            style="font-size:20px; color:black;"></i></a>
+                <a href="#"><i class="fa-solid fa-comment-dots"
+                            style="font-size:20px; color:black;"></i></a>
+                <a href="#"><i class="fa-solid fa-comment"
+                            style="font-size:20px; color:black;"></i></a>
+            </div>
+            <div class="profile">
+                <a href="profile.html">
+                    <img src="https://i.pinimg.com/originals/e4/5d/a5/e45da5e4523d51f7515493fe09e18843.jpg">
+                </a>
+                <i class="fa-solid fa-gear" style="font-size:25px"></i>
+            </div>
+
+
+        </div>
+        <div class="friends">
+            <div class="info">
+               
+                <div>
+                    <h1>Chats</h1>
+                </div>
+                <div class="f-icon">
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+            </div>
+            <div class="search">
+                <form>
+                    <i class="fa-sharp fa-solid fa-magnifying-glass" style="cursor: pointer;font-size:20px"></i>
+                    <input type="search" placeholder="Search Friends">
+                </form>
+            </div>
+
+            <div class="chats" >
+                <div class="chat">
+                    <div>
+                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBs6MU-InXcZnTzG7I9JP5mp2d0iDc39PQkMvsao&s"
+                            class="profile-1">
+</a>
+                    </div>
+                    <div class="detail">
+                        <a href="#">
+                        <h3>RajaRam</h3>
+                        </a>
+                        <p class="content">k xa kbr?<span> 1min.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <a href="#"><img src="https://www.arabianbusiness.com/cloud/2022/11/07/Mark-Zuckerberg.jpg"
+                            class="profile-1"></a>
+
+                    </div>
+                    <div class="detail">
+                        <a href="#"><h3>Mark Zuckerburg</h3></a>
+                        <p class="content">Ok deal.<span> 1h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <a href="#"><img src="data:image/jpeg;base64,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"
+                            class="profile-1"></a>
+
+                    </div>
+                    <div class="detail">
+                        <a href="#"><h3>Ranjit</h3></a>
+                        <p class="content">You sent a attachment.<span>2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <a href="#"><img src="data:image/jpeg;base64,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"
+                            class="profile-1"></a>
+
+                    </div>
+                    <div class="detail">
+                        <a href="#"><h3>Code with Harry</h3></a>
+                        <p class="content">Shared a video.<span>2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <a href="#"><img src="https://i.scdn.co/image/ab6761610000e5eba876cce57ccb11531390ed5f"
+                            class="profile-1"></a>
+
+                    </div>
+                    <div class="detail">
+                        <a href="#"><h3>Ranjit</h3></a>
+                        <p class="content">let's go for Coffee.<span>2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4auYkiGqhGLjGed7QccInxTBAsszbEtdo-g&usqp=CAU"
+                            class="profile-1"></a>
+
+                    </div>
+                    <div class="detail">
+                        <a href="#"><h3>Mr Hanxom</h3></a>
+                        <p class="content">Mr Hanxom called you.<span> 2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4auYkiGqhGLjGed7QccInxTBAsszbEtdo-g&usqp=CAU"
+                            class="profile-1"></a>
+
+                    </div>
+                    <div class="detail">
+                        <a href="#"><h3>Mr Hanxom</h3></a>
+                        <p class="content">Mr Hanxom called you.<span> 2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4auYkiGqhGLjGed7QccInxTBAsszbEtdo-g&usqp=CAU"
+                            class="profile-1">
+
+                    </div>
+                    <div class="detail">
+                        <h3>Mr Hanxom</h3>
+                        <p class="content">Mr Hanxom called you.<span> 2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4auYkiGqhGLjGed7QccInxTBAsszbEtdo-g&usqp=CAU"
+                            class="profile-1">
+
+                    </div>
+                    <div class="detail">
+                        <h3>Mr Hanxom</h3>
+                        <p class="content">Mr Hanxom called you.<span> 2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4auYkiGqhGLjGed7QccInxTBAsszbEtdo-g&usqp=CAU"
+                            class="profile-1">
+
+                    </div>
+                    <div class="detail">
+                        <h3>Mr Hanxom</h3>
+                        <p class="content">Mr Hanxom called you.<span> 2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4auYkiGqhGLjGed7QccInxTBAsszbEtdo-g&usqp=CAU"
+                            class="profile-1">
+
+                    </div>
+                    <div class="detail">
+                        <h3>Mr Hanxom</h3>
+                        <p class="content">Mr Hanxom called you.<span> 2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4auYkiGqhGLjGed7QccInxTBAsszbEtdo-g&usqp=CAU"
+                            class="profile-1">
+
+                    </div>
+                    <div class="detail">
+                        <h3>Mr Hanxom</h3>
+                        <p class="content">Mr Hanxom called you.<span> 2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4auYkiGqhGLjGed7QccInxTBAsszbEtdo-g&usqp=CAU"
+                            class="profile-1">
+
+                    </div>
+                    <div class="detail">
+                        <h3>Mr Hanxom</h3>
+                        <p class="content">Mr Hanxom called you.<span> 2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4auYkiGqhGLjGed7QccInxTBAsszbEtdo-g&usqp=CAU"
+                            class="profile-1">
+
+                    </div>
+                    <div class="detail">
+                        <h3>Mr Hanxom</h3>
+                        <p class="content">Mr Hanxom called you.<span> 2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4auYkiGqhGLjGed7QccInxTBAsszbEtdo-g&usqp=CAU"
+                            class="profile-1">
+
+                    </div>
+                    <div class="detail">
+                        <h3>Mr Hanxom</h3>
+                        <p class="content">Mr Hanxom called you.<span> 2h.</span></p>
+                    </div>
+
+                </div>
+                <div class="chat">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4auYkiGqhGLjGed7QccInxTBAsszbEtdo-g&usqp=CAU"
+                            class="profile-1">
+
+                    </div>
+                    <div class="detail">
+                        <h3>Mr Hanxom</h3>
+                        <p class="content">Mr Hanxom called you.<span> 2h.</span></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

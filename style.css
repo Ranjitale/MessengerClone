@@ -1,0 +1,142 @@
+*{
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+}
+h1{
+font-family: 'Poppins', sans-serif;}
+.container{
+    display:flex;
+}
+.nav-bar{
+    width: 1vw;
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+    border-right: 2px solid rgb(206, 181, 181);
+}
+a{
+    color: black;
+}
+.profile{
+        width: 1vw;
+        position: fixed;
+            display: grid;
+            padding: 20px;
+            gap: 20px;
+            border-right: 2px solid rgb(206, 181, 181);
+}
+.profile_1{
+        width: 1vw;
+        position: fixed;
+            display: grid;
+            padding: 20px;
+            gap: 20px;
+            border-right: 2px solid rgb(206, 181, 181);
+}
+.container-left{
+    justify-content: space-around;
+    position: fixed;
+}
+.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 95% 95%;
+    margin-top: 70vh;
+}
+input{
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    outline: none;background-color: rgb(230, 238, 238);
+    font-size: 20px;
+    border-radius: 2px;
+    left: 1vw;
+ 
+    
+}
+.friends{
+ position: relative;
+ width: 31vw; 
+ left: 9vw  
+}
+
+.info{ 
+    left: 1vw;
+    display: flex;
+    justify-content: space-between;
+}i{
+    cursor: pointer;
+}
+.info i{
+    
+    top: 1vw;
+    background-color: rgb(223, 232, 239);
+    border-radius: 50%;
+} .info i:hover{
+    background-color: rgb(188, 191, 194);
+}
+.f-icon i{
+   padding: 10px;
+}
+.search{
+    position: absolute;
+    left: 1vw;
+    padding: 5px;
+    
+    background-color: rgb(230, 238, 238);
+    border-radius: 20px;
+    width: 19vw;
+    height: 029px;
+   text-align: center;
+   align-items: center;
+
+}
+button{
+    border:none;
+    outline: none;
+}
+.chats{
+    overflow-y: auto;
+   position: inherit;
+    margin-top: 8vh;
+    
+}
+.chat{
+    display: flex;
+    padding: 08px;
+    gap: 10px;
+}
+
+.profile-1{
+    width: 80px;
+    height: 80px;
+    border-radius: 050%;
+}
+.detail{
+    font-weight: 700;
+    position: relative;
+    top: 2.0vw;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+.detail p{
+    font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
+}
+@media only screen and (max-width: 400px) {
+.friends {
+        position: relative;
+        width: 100vw;
+}
+.search{
+    width: 100vw;
+}
+.nav-bar{
+    display: none;
+}
+.profile{
+    display: none;
+}
+}
